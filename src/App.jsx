@@ -1,7 +1,12 @@
+import Card from "./Components/Card";
+import Content from "./Components/Content";
+import Navbar from "./Components/Navbar";
+
 function App() {
 	return (
 		<>
-			<div>Hello</div>
+			<Navbar />
+			<Content />
 		</>
 	);
 }

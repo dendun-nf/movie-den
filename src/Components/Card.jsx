@@ -1,23 +1,18 @@
-export default function Card({ width, text, rating }) {
+export default function Card() {
 	return (
-		<div
-			className="grid grid-flow-row gap-2 pb-4 bg-white rounded-bl-lg rounded-br-lg shadow-xl"
-			id="card-container"
-		>
-			<img
-				className="object-contain aspect-auto"
-				src="https://placehold.co/400"
-				alt=""
-			/>
-			<div
-				className="flex flex-col px-2 font-normal text-gray-500 font-roboto"
-				id="text-container"
-			>
-				<p className="text-sm">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae,
-					dignissimos.
+		<div className="shadow-xl w-80 card bg-base-100">
+			<figure>
+				<img src="https://placehold.co/400x200" alt="img" />
+			</figure>
+			<div className="card-body">
+				<h2 className="card-title">Lorem!</h2>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+					eum doloribus, neque voluptate qui placeat!
 				</p>
-				<p className="self-end text-xs text-gray-500">Rating: 5</p>
+				<div className="justify-end card-actions">
+					<button className="btn btn-primary">Buy</button>
+				</div>
 			</div>
 		</div>
 	);
