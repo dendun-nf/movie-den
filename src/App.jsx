@@ -1,12 +1,15 @@
-import Card from "./Components/Card";
-import Content from "./Components/Content";
-import Navbar from "./Components/Navbar";
+import AnimeSection from "./Components/AnimeSection";
+import MovieSection from "./Components/MovieSection";
+import SeriesSection from "./Components/SeriesSection";
+import TrendingSection from "./Components/TrendingSection";
 
 function App() {
 	return (
 		<>
-			<Navbar />
-			<Content />
+			<TrendingSection />
+			<MovieSection />
+			<SeriesSection />
+			<AnimeSection />
 		</>
 	);
 }
